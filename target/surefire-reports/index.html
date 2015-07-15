@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-SearchTest">
+              <span class="suite-name border-failed">SearchTest</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-SearchTest">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-SearchTest">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-SearchTest">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-SearchTest">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-SearchTest">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-SearchTest">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-SearchTest">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SearchTest" class="hide-methods failed suite-SearchTest"> (hide)</a> <!-- hide-methods failed suite-SearchTest -->
+                      <a href="#" panel-name="suite-SearchTest" class="show-methods failed suite-SearchTest"> (show)</a> <!-- show-methods failed suite-SearchTest -->
+                    </span>
+                    <div class="method-list-content failed suite-SearchTest">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SearchTest" title="SearchTest" hash-for-method="searchForItemTest">searchForItemTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SearchTest -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-SearchTest" class="panel SearchTest">
+          <div class="suite-SearchTest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">SearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchForItemTest">
+                  </a> <!-- searchForItemTest -->
+                  <span class="method-name">searchForItemTest</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+i	DEBUG	startup
+1436967931755	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\Lenovo\AppData\Local\Temp\anonymous7114067591707003963webdriver-profile\extensions\fxdriver@googlecode.com
+1436967931755	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\Lenovo\AppData\Local\Temp\anonymous7114067591707003963webdriver-profile\extensions\webdriver-staging
+1436967931757	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1436967931757	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1436967931758	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1436967931758	addons.xpi	INFO	Mapping avg@toolbar to C:\ProgramData\AVG SafeGuard toolbar\FireFoxExt\18.5.0.909
+1436967931759	addons.xpi	DEBUG	checkForChanges
+1436967931759	addons.xpi	DEBUG	Loaded add-on state from prefs: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;C:\\Users\\Lenovo\\AppData\\Local\\Temp\\anonymous7114067591707003963webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2.35.0&quot;,&quot;st&quot;:1436967913449,&quot;mt&quot;:1436967913251}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;39.0&quot;,&quot;st&quot;:1436967099134,&quot;mt&quot;:1436967097391}},&quot;winreg-app-global&quot;:{&quot;avg@toolbar&quot;:{&quot;d&quot;:&quot;C:\\ProgramData\\AVG SafeGuard toolbar\\FireFoxExt\\18.5.0.909&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;18.5.0.909&quot;,&quot;st&quot;:1436451899239,&quot;mt&quot;:1436451786210}}}
+1436967931761	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1436967931763	addons.xpi	DEBUG	getInstallState changed: false, state: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;C:\\Users\\Lenovo\\AppData\\Local\\Temp\\anonymous7114067591707003963webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2.35.0&quot;,&quot;st&quot;:1436967913449,&quot;mt&quot;:1436967913251}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;39.0&quot;,&quot;st&quot;:1436967099134,&quot;mt&quot;:1436967097391}},&quot;winreg-app-global&quot;:{&quot;avg@toolbar&quot;:{&quot;d&quot;:&quot;C:\\ProgramData\\AVG SafeGuard toolbar\\FireFoxExt\\18.5.0.909&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;18.5.0.909&quot;,&quot;st&quot;:1436451899239,&quot;mt&quot;:1436451786210}}}
+1436967931766	addons.xpi	DEBUG	No changes found
+1436967931772	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1436967931773	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1436967931773	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1436967931773	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1436967931774	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1436967931774	addons.manager	DEBUG	Starting provider: GMPProvider
+1436967931780	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1436967931781	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1436967931781	addons.manager	DEBUG	Starting provider: PluginProvider
+1436967931781	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1436967931781	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1436967931782	addons.manager	DEBUG	Completed startup sequence
+1436967931964	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Users\Lenovo\AppData\Local\Temp\anonymous7114067591707003963webdriver-profile\extensions.json
+1436967931967	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1436967931967	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1436967931968	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1436967932408	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1436967932408	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1436967932409	addons.xpi-utils	DEBUG	Successfully read XPI database
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+
+Build info: version: &apos;2.35.0&apos;, revision: &apos;8df0c6bedf70ff9f22c647788f9fe9c8d22210e2&apos;, time: &apos;2013-08-17 12:46:41&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_40&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:251)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:110)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:195)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:190)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at SearchTest.searchForItemTest(SearchTest.java:16)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+i	DEBUG	startup
+1436967931755	addons.xpi	INFO	Mapping fxdriver@googlecode.com to C:\Users\Lenovo\AppData\Local\Temp\anonymous7114067591707003963webdriver-profile\extensions\fxdriver@googlecode.com
+1436967931755	addons.xpi	DEBUG	Ignoring file entry whose name is not a valid add-on ID: C:\Users\Lenovo\AppData\Local\Temp\anonymous7114067591707003963webdriver-profile\extensions\webdriver-staging
+1436967931757	addons.xpi	INFO	Mapping {972ce4c6-7e08-4474-a285-3208198ce6fd} to C:\Program Files (x86)\Mozilla Firefox\browser\extensions\{972ce4c6-7e08-4474-a285-3208198ce6fd}
+1436967931757	addons.xpi	DEBUG	Skipping unavailable install location app-system-share
+1436967931758	addons.xpi	DEBUG	Skipping unavailable install location app-system-local
+1436967931758	addons.xpi	INFO	Mapping avg@toolbar to C:\ProgramData\AVG SafeGuard toolbar\FireFoxExt\18.5.0.909
+1436967931759	addons.xpi	DEBUG	checkForChanges
+1436967931759	addons.xpi	DEBUG	Loaded add-on state from prefs: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;C:\\Users\\Lenovo\\AppData\\Local\\Temp\\anonymous7114067591707003963webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2.35.0&quot;,&quot;st&quot;:1436967913449,&quot;mt&quot;:1436967913251}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;39.0&quot;,&quot;st&quot;:1436967099134,&quot;mt&quot;:1436967097391}},&quot;winreg-app-global&quot;:{&quot;avg@toolbar&quot;:{&quot;d&quot;:&quot;C:\\ProgramData\\AVG SafeGuard toolbar\\FireFoxExt\\18.5.0.909&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;18.5.0.909&quot;,&quot;st&quot;:1436451899239,&quot;mt&quot;:1436451786210}}}
+1436967931761	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1436967931763	addons.xpi	DEBUG	getInstallState changed: false, state: {&quot;app-profile&quot;:{&quot;fxdriver@googlecode.com&quot;:{&quot;d&quot;:&quot;C:\\Users\\Lenovo\\AppData\\Local\\Temp\\anonymous7114067591707003963webdriver-profile\\extensions\\fxdriver@googlecode.com&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;2.35.0&quot;,&quot;st&quot;:1436967913449,&quot;mt&quot;:1436967913251}},&quot;app-global&quot;:{&quot;{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;:{&quot;d&quot;:&quot;C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}&quot;,&quot;e&quot;:true,&quot;v&quot;:&quot;39.0&quot;,&quot;st&quot;:1436967099134,&quot;mt&quot;:1436967097391}},&quot;winreg-app-global&quot;:{&quot;avg@toolbar&quot;:{&quot;d&quot;:&quot;C:\\ProgramData\\AVG SafeGuard toolbar\\FireFoxExt\\18.5.0.909&quot;,&quot;e&quot;:false,&quot;v&quot;:&quot;18.5.0.909&quot;,&quot;st&quot;:1436451899239,&quot;mt&quot;:1436451786210}}}
+1436967931766	addons.xpi	DEBUG	No changes found
+1436967931772	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1436967931773	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1436967931773	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1436967931773	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1436967931774	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1436967931774	addons.manager	DEBUG	Starting provider: GMPProvider
+1436967931780	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1436967931781	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1436967931781	addons.manager	DEBUG	Starting provider: PluginProvider
+1436967931781	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1436967931781	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1436967931782	addons.manager	DEBUG	Completed startup sequence
+1436967931964	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Users\Lenovo\AppData\Local\Temp\anonymous7114067591707003963webdriver-profile\extensions.json
+1436967931967	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1436967931967	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1436967931968	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+1436967932408	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1436967932408	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1436967932409	addons.xpi-utils	DEBUG	Successfully read XPI database
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:106)
+	... 40 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SearchTest-class-failed -->
+        </div> <!-- panel SearchTest -->
+        <div panel-name="test-xml-SearchTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;SearchTest&quot;&gt;
+  &lt;test name=&quot;Command line test&quot; preserve-order=&quot;false&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;SearchTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- SearchTest --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-SearchTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for SearchTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-SearchTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for SearchTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-SearchTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for SearchTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_SearchTest');
+function tableData_SearchTest() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'searchForItemTest')
+data.setCell(0, 2, 'SearchTest')
+data.setCell(0, 3, 63966);
+window.suiteTableData['SearchTest']= { tableData: data, tableDiv: 'times-div-SearchTest'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-SearchTest">
+              </div> <!-- times-div-SearchTest -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-SearchTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for SearchTest</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-SearchTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-SearchTest" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">SearchTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchForItemTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
